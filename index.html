@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza On-line</title>
+    <style>
+        body {
+            background-color: #00FFFF;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 20px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            width: 150px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            flex: 1;
+        }
+        .form-group textarea {
+            resize: none;
+            height: 100px;
+        }
+        .form-group .radio-group {
+            display: flex;
+            align-items: center;
+        }
+        .form-group .radio-group input {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PIZZA ON-LINE</h1>
+
+        <div class="form-group">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome">
+        </div>
+
+        <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone">
+        </div>
+
+        <div class="form-group">
+            <label for="tamanho">Tamanho:</label>
+            <select id="tamanho" name="tamanho">
+                <option value="pequeno">Pequeno</option>
+                <option value="medio">Médio</option>
+                <option value="grande">Grande</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="ingredientes">Ingredientes (tecle CTRL para selecionar):</label>
+            <select id="ingredientes" name="ingredientes" multiple size="8">
+                <option value="mussarela">Mussarela</option>
+                <option value="presunto">Presunto</option>
+                <option value="calabresa">Calabresa</option>
+                <option value="ovos">Ovos Cozidos</option>
+                <option value="pimentao">Pimentão</option>
+                <option value="cebola">Cebola</option>
+                <option value="oregano">Orégano</option>
+                <option value="todos">Todos os Itens</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Borda de catupiry?</label>
+            <div class="radio-group">
+                <input type="radio" id="catupiry-sim" name="catupiry" value="sim">
+                <label for="catupiry-sim">Sim</label>
+                <input type="radio" id="catupiry-nao" name="catupiry" value="nao">
+                <label for="catupiry-nao">Não</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="observacoes">Observações:</label>
+            <textarea id="observacoes" name="observacoes"></textarea>
+        </div>
+    </div>
+</body>
+</html>
